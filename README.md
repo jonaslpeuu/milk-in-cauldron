@@ -1,6 +1,6 @@
 # 🥛 Milk in Cauldron
 
-A simple Fabric mod for Minecraft 1.21.10 that allows you to pour milk from a bucket into a cauldron!
+A simple Fabric mod for Minecraft 1.21.10 and more! That allows you to pour milk from a bucket into a cauldron!
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.10-green)
 ![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)
