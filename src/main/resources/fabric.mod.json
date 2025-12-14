@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "milk_in_cauldron",
+  "version": "${version}",
+  "name": "Milk in Cauldron",
+  "description": "Allows you to pour milk from a milk bucket into a cauldron!",
+  "authors": [
+    "whitoutcookies"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/milk-in-cauldron",
+    "sources": "https://github.com/whitoutcookies/milk-in-cauldron",
+    "issues": "https://github.com/whitoutcookies/milk-in-cauldron/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/milk_in_cauldron/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "de.whitoutcookies.milk_in_cauldron.client.Milk_in_cauldronDataGenerator"
+    ],
+    "client": [
+      "de.whitoutcookies.milk_in_cauldron.client.Milk_in_cauldronClient"
+    ],
+    "main": [
+      "de.whitoutcookies.milk_in_cauldron.Milk_in_cauldron"
+    ]
+  },
+  "mixins": [
+    "milk_in_cauldron.mixins.json",
+    {
+      "config": "milk_in_cauldron.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
